@@ -1,0 +1,317 @@
+body{
+    background-color: grey;
+    margin-left: 0px;
+}
+#franceBlue{
+    background-color: blue;
+    height: 50px;
+    width: 33.3px;
+    position: absolute;
+}
+#franceWhite{
+    background-color: white;
+    height: 50px;
+    width: 33.3px;
+    left: 33.3px;
+    position: absolute;
+}
+#franceRed{
+    background-color: red;
+    height: 50px;
+    width: 33.3px;
+    left: 66.6px;
+    position: absolute;
+
+}
+
+#germanyBlack{
+    background-color: black;
+    height: 16.6px;
+    width: 100px;
+    left: 125px;
+    position: absolute;
+}
+#germanyRed{
+    background-color: red;
+    height: 16.6px;
+    width: 100px;
+    left: 125px;
+    top: 25px;
+    position: absolute;
+}
+#germanyYellow{
+    background-color: yellow;
+    height: 16.6px;
+    width: 100px;
+    left: 125px;
+    top: 41.6px;
+    position: absolute;
+}
+
+#madagascarWhite{
+    background-color: white;
+    height: 50px;
+    width: 33.3px;
+    left: 250px;
+    position: absolute;
+}
+#madagascarRed{
+    background-color: red;
+    height: 25px;
+    width: 66.6px;
+    left: 283.3px;
+    position: absolute;
+}
+#madagascarGreen{
+    background-color: green;
+    height: 25px;
+    width: 66.6px;
+    left: 283.3px;
+    top: 33px;
+    position: absolute;
+}
+
+#switzerlandRed{
+    background-color: red;
+    height: 50px;
+    width: 100px;
+    left: 375px;
+    position: absolute;
+}
+#switzerlandWhiteBox1{
+    background-color: white;
+    height: 35px;
+    width: 13.3px;
+    left: 420px;
+    top: 15px;
+    position: absolute;
+}
+#switzerlandWhiteBox2{
+    background-color: white;
+    height: 13.3px;
+    width: 35px;
+    left: 409px;
+    top: 25px;
+    position: absolute;
+}
+
+#swedenBlue{
+    background-color: blue;
+    height: 50px;
+    width: 100px;
+    left: 500px;
+    position: absolute;
+}
+#swedenYellow1{
+    background-color: yellow;
+    height: 10px;
+    width: 100px;
+    left: 500px;
+    top: 27.5px;
+    position: absolute;
+}
+#swedenYellow2{
+    background-color: yellow;
+    height: 50px;
+    width: 10px;
+    left: 525px;
+    top: 8px;
+    position: absolute;
+}
+
+#gambiaRed{
+    background-color: red;
+    height: 33.3px;
+    width: 100px;
+    left: 625px;
+    position: absolute;
+}
+#gambiaBlue{
+    background-color: blue;
+    height: 15px;
+    width: 100px;
+    left: 625px;
+    top: 22px;
+    position: absolute;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+}
+#gambiaGreen{
+    background-color: green;
+    height: 15px;
+    width: 100px;
+    left: 625px;
+    top: 43px;
+    position: absolute;
+}
+
+#tongaRed1{
+    background-color: red;
+    height: 50px;
+    width: 100px;
+    left: 750px;
+    position: absolute;
+}
+#tongaWhite{
+    background-color: white;
+    height: 25px;
+    width: 40px;
+    left: 750px;
+    position: absolute;
+}
+#tongaRed2{
+    background-color: red;
+    height: 7px;
+    width: 20px;
+    left: 760px;
+    top: 16px;
+    position: absolute;
+}
+#tongaRed3{
+    background-color: red;
+    height: 20px;
+    width: 7px;
+    left: 766.5px;
+    top: 10px;
+    position: absolute;
+}
+
+#japanWhite{
+    background-color: white;
+    height: 50px;
+    width: 100px;
+    left: 875px;
+    position: absolute;
+}
+#japanRed{
+    background-color: red;
+    height: 30px;
+    width: 30px;
+    left: 910px;
+    top: 18px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+#greeceBlue{
+    background-color: blue;
+    height: 50px;
+    width: 100px;
+    left: 1000px;
+    position: absolute;
+}
+#greeceWhiteCross1{
+    background-color: white;
+    height: 27.5px;
+    width: 5.5px;
+    left: 1010px;
+    position:absolute;
+}
+#greeceWhiteCross2{
+    background-color: white;
+    height: 5.5px;
+    width: 27.5px;
+    left: 1000px;
+    top: 18px;
+    position: absolute;
+}
+#greeceWhiteStripe1{
+    background-color: white;
+    height: 5px;
+    width: 72.5px;
+    left: 1027.5px;
+    top: 13px;
+    position: absolute;
+}
+#greeceWhiteStripe2{
+    background-color: white;
+    height: 5px;
+    width: 72.5px;
+    left: 1027.5px;
+    top: 24px;
+    position: absolute;
+}
+#greeceWhiteStripe3{
+    background-color: white;
+    height: 5px;
+    width: 100px;
+    left: 1000px;
+    top: 35px;
+    position: absolute;
+}
+#greeceWhiteStripe4{
+    background-color: white;
+    height: 5px;
+    width: 100px;
+    left: 1000px;
+    top: 46px;
+    position: absolute;
+}
+
+#nigerOrange{
+    background-color: orange;
+    height: 16.6px;
+    width: 100px;
+    left: 1125px;
+    position: absolute;
+}
+#nigerWhite{
+    background-color: white;
+    height: 16.6px;
+    width: 100px;
+    left: 1125px;
+    top: 24.6px;
+    position: absolute;
+}
+#nigerGreen{
+    background-color: green;
+    height: 16.6px;
+    width: 100px;
+    left: 1125px;
+    top: 40px;
+    position: absolute;
+}
+#nigerCircle{
+    background-color: orange;
+    height: 13px;
+    width: 13px;
+    left: 1170px;
+    border-radius: 50%;
+    top: 26px;
+    position: absolute;
+}
+
+#maldivesRed{
+    background-color: red;
+    height: 50px;
+    width: 100px;
+    left: 1250px;
+    position: absolute;
+}
+#maldivesGreen{
+    background-color: green;
+    height: 27px;
+    width: 65px;
+    left: 1267px;
+    top: 19px;
+    position: absolute;
+}
+#maldivesWhiteCircle{
+    background-color: white;
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+    left: 1295px;
+    top: 24px;
+    position: absolute;
+}
+
+#maldivesGreenCircle{
+    background-color: green;
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+    left: 1300px;
+    top: 24px;
+    position: absolute;
+}

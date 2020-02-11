@@ -1,0 +1,22 @@
+h2 {
+    color:darkgreen;
+    font-family: "Georgia";
+    text-align: center;
+}
+
+h3 {
+    font-family: "Georgia";
+    text-align: center;
+}
+
+div {
+    font-size: 25px;
+}
+
+.link {
+    text-transform: uppercase;
+}
+
+a:hover {
+    text-decoration: underline;
+}

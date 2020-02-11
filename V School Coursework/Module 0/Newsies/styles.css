@@ -1,0 +1,79 @@
+body {
+    background-color: white
+}
+
+img {
+    display: block;
+    border: 10px solid olive;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+h1 {
+    font-family: 'ChomskyRegular';
+    text-align: center;
+    font-size: 60px;
+    background-color: slategrey;
+}
+
+h2, h3{
+    font-family: 'Merriweather', serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-decoration: bold;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.header {
+    font-family: 'Merriweather', serif;
+    position: absolute;
+    top: 40px;
+    left: 1275px;
+}
+
+.motto {
+    font-family: 'Merriweather', serif;
+    position: absolute;
+    top: 50px;
+    left: 75px;
+    border: black solid 2px;
+    padding: 10px;
+}
+
+h2 {
+    color: black;
+    margin-bottom: 50px;
+    font-size: 75px;
+}
+
+.author {
+    text-transform: uppercase;
+}
+
+
+.main {
+    font-family: 'Raleway', sans-serif;
+    line-height: 150%;
+    font-size: 20px;
+    margin: 20px;
+    column-count: 3;
+    background-color: rgba(255,255,255,0.3);
+    padding: 20px;
+}
+
+.background {
+    font-style: italic;
+    border: dotted;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    margin: 30px;
+    padding: 20px;
+}
+
+span {
+    color: olive;
+}
