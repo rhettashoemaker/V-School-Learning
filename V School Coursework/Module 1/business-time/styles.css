@@ -1,0 +1,87 @@
+html, body {
+    background-color: #092601;
+    margin: 0px;
+    padding: 0px;
+}
+
+ul {
+    margin: 15px;
+    padding: 30px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    width: 600px;
+    border-radius: 30%;
+}
+
+li {
+    display: inline;
+    color: #154001;
+    background-color: #68A629;
+    padding: 15px;
+}
+
+li a:hover {
+    color: white;
+}
+
+.active {
+    background-color: #307326;
+}
+
+.heading > h1 {
+    color: #F2F2F2;
+    font-family: 'Lemonada', cursive;
+    font-size: 70px;
+    display: block;
+    text-align: center;
+}
+
+.heading > h2 {
+    color: #68A629;
+    font-family: 'Raleway', sans-serif;
+}
+
+.slideshow {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+.numberText {
+    color: #092601;
+    font-size: 12px;
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+}
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 1 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    text-align: center;
+}
+.active {
+    background-color: #717171;
+}
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade{
+    from {opacity: .4}
+    to {opacity: 1}
+}
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.introduction > p {
+    font-family: 'Raleway', sans-serif;
+    color: #68A629;
+}
