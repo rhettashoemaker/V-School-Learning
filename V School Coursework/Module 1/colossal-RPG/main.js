@@ -94,6 +94,7 @@ while (time > 0 && socialReserves > 0 && counter < 10 ) {
             let willYouEngage = rls.question ("\n\nA wild Time Taker appeared! You " + event.name + ".\n\nTime it will take up: " + event.timeTakesUp + "\nSocial reserve damage: " + event.socialReserveSappage + "\nItem: " + event.item + ". \n\nTo engage, type (e). To avoid, type (a)\n");
             if (willYouEngage === "a"){
                 const avoidChance = Math.floor(Math.random()*2);
+                
                 if( avoidChance === 0 ){
                     console.log("\n\nWell, that didn't work out. Phooey. Better luck next time. Guess it'll be an introverted evening. How very terrible.");
                     time = 0;
