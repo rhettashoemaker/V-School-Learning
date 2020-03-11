@@ -15,7 +15,7 @@ console.log("\nThe remaining 40% of the time you'll be able to calmly bask in so
 const eventOptions = [
     {
         name: "got visited by a Chatty Cathy neighbor",
-        item: " life lessons and a deepened friendship",
+        item: [" life lessons", " deepened friendship"],
         timeTaker: true,
         timeTakesUp: Math.floor(Math.random()*100),
         persistence: 30
