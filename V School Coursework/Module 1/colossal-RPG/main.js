@@ -1,7 +1,7 @@
 const rls = require( "readline-sync");
 
 let time = 100;
-let socialReserves = 50;
+let socialReserves = 100;
 const inventory = [];
 let counter = 0;
 
@@ -18,42 +18,36 @@ const eventOptions = [
         item: " life lessons and a deepened friendship",
         timeTaker: true,
         timeTakesUp: Math.floor(Math.random()*100),
-        socialReserveSappage: Math.floor(Math.random()*40),
         persistence: 30
     },{
         name: "cut your finger",
         item: " nostalgia trip from the superhero band-aid you used on your finger",
         timeTaker: true,
         timeTakesUp: Math.floor(Math.random()*10),
-        socialReserveSappage: Math.floor(Math.random()*5),
         persistence: 15
     },{
         name: "got distracted by social media",
         item: " several hilarious memes to add to your collection",
         timeTaker: true,
         timeTakesUp: Math.floor(Math.random()*30),
-        socialReserveSappage: Math.floor(Math.random()*20),
         persistence: 25
     },{
         name: "remembered you need to do laundry and got distracted by that",
         item: " clean, fresh clothes",
         timeTaker: true,
         timeTakesUp: Math.floor(Math.random()*20),
-        socialReserveSappage: Math.floor(Math.random()*10),
         persistence: 10
     },{
         name: " didn't have an important ingredient so you went to the store",
         item: [" the needed ingredient", " the best gummy bears in the world"],
         timeTaker: true,
         timeTakesUp: Math.floor(Math.random()*30),
-        socialReserveSappage: Math.floor(Math.random()*30),
         persistence: 30
     },{
         name: "played with a needy cat",
         item: " increased bonding",
         timeTaker: true,
         timeTakesUp: Math.floor(Math.random()*30),
-        socialReserveSappage: Math.floor(Math.random()*15),
         persistence: 50
     },{
         name: "'Bad Mind' by Erin Rae",
@@ -79,6 +73,16 @@ function eventDecider () {
 }
 
 while (time > 0 && socialReserves > 0 && counter < 10 ) {
+    if (socialReserves <= 0) {
+        console.log("Aaaaaaand, that's it. no more social stuff for today. Time for some PJs and Agatha Christie!")
+        console.log("\n\nName: " + name + "\nTurns taken: " + counter + "\nTime left: " + time + "\nSocial Reserves left: " + socialReserves + "\nExperiences:" + inventory + "\n\n")
+        process.exit();
+    } else if (counter === 10) {
+        console.log("You did it! You made an absolutely tasty salsa that will delight your friends, and you kept up your steely nerve to socialize. On top of that, you gained some great experiences along the way. Have an awesome party!")
+        console.log("Name: " + name + "\nTurns taken: " + counter + "\nTime left: " + time + "\nSocial Reserves left: " + socialReserves + "\nExperiences:" + inventory)
+        process.exit();
+    }
+
     const cook = rls.question ("\nTo cook, type 'c' then press enter. To see your stats, type 'p' then press enter.  ");
     if (cook === "p") {
         console.log("\n\nName: " + name + "\nTurns taken: " + counter + "\nTime left: " + time + "\nSocial Reserves left: " + socialReserves + "\nExperiences:" + inventory + "\n")
@@ -91,11 +95,12 @@ while (time > 0 && socialReserves > 0 && counter < 10 ) {
         }
         if (event.timeTaker) {
             counter++;
-            let willYouEngage = rls.question ("\n\nA wild Time Taker appeared! You " + event.name + ".\n\nTime it will take up: " + event.timeTakesUp + "\nSocial reserve damage: " + event.socialReserveSappage + "\nItem: " + event.item + ". \n\nTo engage, type (e). To avoid, type (a)\n");
+            let willYouEngage = rls.question ("\n\nA wild Time Taker appeared! You " + event.name + ".\n\nTime it will take up: " + event.timeTakesUp + "\nSocial reserve damage: range from 0 - 30\nItem: " + event.item + ". \n\nTo engage, type 'e'. To avoid, type 'a':  ");            
             if (willYouEngage === "a"){
                 const avoidChance = Math.floor(Math.random()*2);
                 if( avoidChance === 0 ){
                     console.log("\n\nWell, that didn't work out. Phooey. Better luck next time. Guess it'll be an introverted evening. How very terrible.");
+                    console.log("\n\nName: " + name + "\nTurns taken: " + counter + "\nTime left: " + time + "\nSocial Reserves left: " + socialReserves + "\nExperiences:" + inventory + "\n\n")
                     time = 0;
                     counter++;
                     process.exit();
@@ -107,29 +112,33 @@ while (time > 0 && socialReserves > 0 && counter < 10 ) {
             } else if (willYouEngage === "e") {
                 time -= event.timeTakesUp;
                 console.log("Your time has decreased by " + event.timeTakesUp + " minutes.");
-                if (event.persistence <= 0) {
-                    inventory.push(event.item);
-                    console.log("\n\nCongrats! You navigated that like a champ. You added an item to your inventory of the day's experiences.");
-                } else if (event.persistence > 0 ) { 
+                if (event.persistence > 0 ) { 
                     while (event.persistence > 0) {
                         if (time > 0 && socialReserves > 0 && counter < 10) {
                             let deflectAbility = Math.floor(Math.random() * 20);
+                            let socialReserveSappage = Math.floor(Math.random()*15);
                             newEnemyHP = event.persistence - deflectAbility;
                             event.persistence -= deflectAbility;
                             console.log("\n\nYou use your best time management and deflecting skills to deflect " + deflectAbility + ", which shrinks your opponent's persistence to " + newEnemyHP + ".");
-                            if (event.persistence <= 0 && time > 0 && socialReserves > 0 && counter < 10) {
+                            if (event.persistence > 0 && time > 0 && socialReserves > 0 && counter < 10) {
+                                socialReserves -= socialReserveSappage;
+                                console.log("Your opponent keeps demanding engagement, and takes " + socialReserveSappage + " of your social reserve to leave it at " + socialReserves + ".");
+                                if (socialReserves <= 0) {
+                                    console.log("Aaaaaaand, that's it. no more social stuff for today. Time for some PJs and Agatha Christie!")
+                                    console.log("\n\nName: " + name + "\nTurns taken: " + counter + "\nTime left: " + time + "\nSocial Reserves left: " + socialReserves + "\nExperiences:" + inventory + "\n\n")
+                                    process.exit();
+                                } else if (counter === 10) {
+                                    console.log("You did it! You made an absolutely tasty salsa that will delight your friends, and you kept up your steely nerve to socialize. On top of that, you gained some great experiences along the way. Have an awesome party!")
+                                    console.log("\n\nName: " + name + "\nTurns taken: " + counter + "\nTime left: " + time + "\nSocial Reserves left: " + socialReserves + "\nExperiences:" + inventory)
+                                    process.exit();
+                                }
+                            } else if (event.persistence <= 0 && time > 0 && socialReserves > 0 && counter < 10) {
                                 inventory.push(event.item);
-                                console.log("\n\nCongrats! You navigated that like a champ. You added an item to your inventory of the day's experiences.")
-                            } else if (event.persistence > 0 && time > 0 && socialReserves > 0 && counter < 10) {
-                                socialReserves -= event.socialReserveSappage;
-                                console.log("Your opponent keeps demanding engagement, and takes " + event.socialReserveSappage+ " of your social reserve.");
-                            } else if (counter === 0) {
-                                console.log("You did it! You made an absolutely tasty salsa that will delight your friends, and you kept up your steely nerve to socialize. On top of that, you gained some great experiences along the way. Have an awesome party!")
-                                console.log("Name: " + name + "\nTurns taken: " + counter + "\nTime left: " + time + "\nSocial Reserves left: " + socialReserves + "\nExperiences:" + inventory)
-                                process.exit();
+                                console.log("\n\nCongrats! You navigated that like a champ. You added an item to your inventory of the day's experiences.");
                             }
+                            continue
                         }
-                        continue
+                    
                     }
                 }
             }
