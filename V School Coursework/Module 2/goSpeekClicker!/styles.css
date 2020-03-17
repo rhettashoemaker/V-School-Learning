@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+body {
+    background-image: url("https://classicanimemuseum.files.wordpress.com/2018/05/sr_hd.jpg?w=800");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    font-family: 'Racing Sans One';
+    position: absolute;
+    left: 60%;
+    top: 55%;
+    font-size: 96px;
+    display: inline-block;
+    background-color: red;
+    color: yellow;
+    border-radius: 20px;
+    padding: 0% 1% 0% 1%;
+    text-align: center;
+}
+
+@media only screen and (min-width: 600px) {
+h1 {
+    left: 55%;
+    top: 55%;
+}
+}
+
+@media only screen and (min-width: 1000px) {
+h1 {
+    left: 53%;
+    top: 57%;
+}
+}

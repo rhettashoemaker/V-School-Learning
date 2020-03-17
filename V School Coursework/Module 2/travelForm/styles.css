@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #C4D3C1;
+    font-family: 'Roboto', sans-serif;
+}
+
+#header {
+    position: relative;
+    text-align: center;
+    color: #F2EDE4;
+}
+
+.fa {
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: #736753;
+    margin: 8px;
+    float: right;
+    position: absolute;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+h1 {
+    font-family: 'Nanum Gothic', sans-serif;
+    display: inline-block;
+    color: #40392C;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+#socialMediaLinks {
+    display: inline-block;
+}
+
+#parallax {
+    background-image: url("http://4.bp.blogspot.com/-fe5EMYNm7rs/UYjb3l07mdI/AAAAAAAAvU0/1wKHc3wGPWA/s1600/Books+&+Magazines+HD+Wallpaper+(12).jpg");
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    top: 0px;
+}
+
