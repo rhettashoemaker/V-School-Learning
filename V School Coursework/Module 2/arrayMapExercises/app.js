@@ -15,13 +15,12 @@ console.log(stringItUp);
 //3. Properly capitalize
 const messy = ["john", "JACOB", "jinGleHeimer", "schmidt"]
 const capitalizeNames = messy.map(function(arr) {
-    for(i = 0; i <arr.length; i++) {
-        arr.toLowerCase()
-        if (arr.indexOf === 0) {
-            arr.toUpperCase([0])
-        }   
-        return arr
-    }
+    let firstLetter = arr.slice(0,1)
+    let rest = arr.slice(1, arr.length)
+    firstLetter = firstLetter.toUpperCase()
+    rest = rest.toLowerCase()
+    let wholeThing = firstLetter.concat(rest)
+    return wholeThing
 })
 console.log(capitalizeNames);
 
@@ -65,11 +64,14 @@ console.log(makeStrings);
 
 //6. Array of names in <h1>s, ages in <h2>s
 const readyToPutInTheDOM = people.map(function(arr) {
-    const header = document.getElementById("header")
-    const h1 = document.createElement("h1").innerHTML = arr.name
-    h1.appendChild(header)
-    const h2 = document.createElement("h2").innerHTML = arr.age
-    h2.appendChild(h1)
+    const h1 = document.createElement("h1");
+    const h2 = document.createElement("h2")
+    const textNode = document.createTextNode(arr.name);
+    const ageNode = document.createTextNode(arr.age)
+    h1.appendChild(textNode);
+    h2.appendChild(ageNode)
+    document.body.appendChild(h1);
+    document.body.appendChild(h2);
     return arr
 })
 console.log(readyToPutInTheDOM); 
