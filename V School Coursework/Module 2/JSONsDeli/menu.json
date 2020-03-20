@@ -1,0 +1,74 @@
+{
+    "menu": [
+        {
+            "Appetizers": [
+                {
+                    "name": "Beet Salad",
+                    "price": 12,
+                    "ingredients": ["whipped goat cheese", "honey", "radicchio", "fennel", "radish", "citrus vinaigrette", "pinenuts"]
+                }, 
+                {
+                    "name": "Tuna Poke",
+                    "price": 19,
+                    "ingredients": ["mango", "pickled serranos", "cilantro soy vinaigrette", "sesame", "togarashi won tons"]
+                }
+            ]
+        },
+        {
+            "House Made Pasta": [
+                {
+                    "name": "Butternut Squash Agnolotti",
+                    "price": 13,
+                    "ingredients": ["agnolotti", "roasted butternut squash", "ricotta", "sage oil", "hazlenut frico"]
+                },
+                {
+                    "name": "Tagliatelle",
+                    "price": 17,
+                    "ingredients": ["Pistachio pesto", "citrus breadcrumbs", "pecorino"]
+                }
+            ]
+        }, 
+        {
+            "Entrees": [
+                {
+                    "name": "Saag Paneer",
+                    "price": 18,
+                    "ingredients": ["local greens", "griddled Heber Valley cheese", "coconut rice", "chili flake", "cilantro"]
+                },
+                {
+                    "name": "Lamb Riblets",
+                    "price": 28,
+                    "ingredients": ["sweet potatoes", "charred scallion yogurt", "za'atar oil"]
+                }
+            ]
+        },
+        {
+            "Desserts": [
+                {
+                    "name": "Chocolate Pudding",
+                    "price": 8,
+                    "ingredients": ["Valrhona chocolate", "vanilla whip", "maldon salt", "olive oil"]
+                },
+                {
+                    "name": "Poached Pear",
+                    "price": 8,
+                    "ingredients": ["whipped mascarpone", "candied hazlenuts", "lemon zest"]
+                }
+            ]
+        },
+        {
+            "Drinks": [
+                {
+                    "name": "Irish Coffee",
+                    "price": 10,
+                    "ingredients": ["Jameson Irish Whiskey", "raw sugar", "whipped cream"]
+                },
+                {
+                    "name": "Brandy Alexander",
+                    "price": 10,
+                    "ingredients": ["brandy", "cream", "creme de cacao", "nutmeg"]
+                }
+            ]
+        }
+    ]
+}
