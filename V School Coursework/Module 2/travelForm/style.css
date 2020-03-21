@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     font-family: 'Libre Baskerville', serif;
-
 }
 
 body {
@@ -17,10 +16,15 @@ body {
 #header {
     background-color: #C8D687;
     padding: 24px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    border: 4px solid #FF834A;
+    display: border-box;
 }
 
 h1 {
-    font-size: 80px;
+    font-size: 56px;
     text-align: center;
     color: #90AD4B;
 }
@@ -51,17 +55,22 @@ h1 {
     color: #FF834A;
     opacity: .95;
     width: 45%;
-    margin: 80px auto 80px auto;
-    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
     padding: 72px;
-    font-size: 24px;
+    font-size: 18px;
     border-radius: 16px;
     line-height: 1.4;
     font-family: 'Libre Baskerville', serif;
+    position: relative;
+    top: 216px;
+    z-index: -1;
+    border: 4px solid #90AD4B;
 }
 
 b {
-    font-size: 32px;
+    font-size: 24px;
 }
 
 input {
@@ -84,4 +93,11 @@ input[type=text], input[type=number], select, button {
 
 select {
     width: 250px;
+}
+
+button {
+    position: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
