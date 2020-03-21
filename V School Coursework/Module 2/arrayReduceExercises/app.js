@@ -1,5 +1,6 @@
 //1. Turn an array of numbers into a total of all the numbers
 const numbers = [1, 2, 3]
+
 const sum = numbers.reduce(function(final, num) {
     final += num
     return final
@@ -8,10 +9,11 @@ console.log(sum)
 
 //2. Turn an array of numbers into a long string of all those numbers
 const concat = numbers.reduce(function(final, num) {
-    final.push("Testing, testing, " + num)
+    const string = num.toString();
+    final += string;
     return final
 })
-console.log(final)
+console.log(concat)
 
 //3. Turn an array of voter objects into a count of how many people voted
 const voter = [

@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Libre Baskerville', serif;
+
+}
+
+body {
+    background-image: url("https://images.pexels.com/photos/442420/books-shelves-architecture-wood-442420.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    z-index: -10000000000000;
+} 
+
+#header {
+    background-color: #C8D687;
+    padding: 24px;
+}
+
+h1 {
+    font-size: 80px;
+    text-align: center;
+    color: #90AD4B;
+}
+
+#socialMediaLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: px;
+}
+
+.fa {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    opacity: .7;
+    margin: 8px;
+}
+
+.fa:hover {
+    color: white;
+    opacity: 1;
+    transition: color .2s linear;
+}
+
+#travelFormContainer {
+    background-color: #FFCB5C;
+    color: #FF834A;
+    opacity: .95;
+    width: 45%;
+    margin: 80px auto 80px auto;
+    text-align: center;
+    padding: 72px;
+    font-size: 24px;
+    border-radius: 16px;
+    line-height: 1.4;
+    font-family: 'Libre Baskerville', serif;
+}
+
+b {
+    font-size: 32px;
+}
+
+input {
+    margin: 8px;
+    padding: 8px;
+}
+
+input:focus {
+    background-color: white;
+}
+
+input[type=text], input[type=number], select, button {
+    border: 1px solid #FF834A;
+    border-radius: 4px;
+    height: 32px;
+    width: 135px;
+    font-size: 20px;
+    color: #FF834A;
+}
+
+select {
+    width: 250px;
+}
