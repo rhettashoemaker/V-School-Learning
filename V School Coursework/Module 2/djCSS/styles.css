@@ -21,10 +21,9 @@ h1 {
 }
 
 #box1, #box2, #box3, #box4, #box5, #box6 {
-    width: 32px;
-    height: 32px;
+    width: 64px;
+    height: 64px;
     position: absolute;
-    background-color: white;
 }
 
 #box1:hover, #box2:hover, #box3:hover, #box4:hover, #box5:hover, #box6:hover {
@@ -69,8 +68,6 @@ h1 {
     transition: opacity .5s ease 2s, color .5s ease-in-out;
     color: #5B9496;
     opacity: 0;
-    width: 64px;
-    height: 64px;
     text-align: center;
     font-family: 'Baloo Chettan 2', cursive;
     padding: 8px;
