@@ -10,7 +10,7 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    z-index: -10000000000000;
+    z-index: -10;
 }
 
 #title {
@@ -31,26 +31,25 @@ body {
 #marioForm {
     padding: 16px;
 }
+
 .names {
     font-size: 24px;
-    color: orange;
+    color: #ffcc00;
     font-family: 'Press Start 2P', cursive;
     padding-top: 10px;
-    
 }
 
 input {
     height: 30px;
-    width: 40px;
-    font-family: 'Teko', sans-serif;
+    width: 80px;
     font-size: 24px;
     text-align: center;
     padding: 2px;
+    border-radius: 8px;
 }
 
 .totals {
     display: inline-block;
-    font-family: 'Teko', sans-serif;
 }
 
 #total, #totalSum {
@@ -62,13 +61,14 @@ input {
 }
 
 button {
-    height: 32px;
-    width: 200px;
-    margin: 16px;
+    height: 48px;
+    width: 250px;
+    margin: 16px 16px 0px 16px;
+    padding: 18x;
     background-color: red;
     color: white;
-    font-size: 24px;
-    font-family: 'Teko', sans-serif;
+    font-size: 20px;
+    border-radius: 8px;
 }
 
 .baddie, #marioImg {

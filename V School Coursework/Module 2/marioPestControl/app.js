@@ -7,15 +7,17 @@ form.addEventListener("submit", (event) => {
     const boos= form.boosCaught.value;
     const bowsers = form.bowsersCaught.value;
 
-    let goombaTotal = document.getElementById("goombaTotal");
-    let booTotal = document.getElementById("booTotal");
-    let bowserTotal = document.getElementById("bowserTotal");
-    let grandTotal = document.getElementById("totalSum");
+    let goombaTotal = document.getElementById("goombaTotal").innerText;
+    let booTotal = document.getElementById("booTotal").innerText;
+    let bowserTotal = document.getElementById("bowserTotal").innerText;
+    let grandTotal = document.getElementById("totalSum").innerText;
 
-    const goombalicious = goombaTotal.innerText = goombas * 5;
-    const boolicious = booTotal.innerText = boos * 10;
-    const bowserlicious = bowserTotal = bowsers * 100;
+    goombaTotal = goombas * 5;
+    booTotal = boos * 10;
+    bowserTotal = bowsers * 100;
 
-    grandTotal.innerText = goombalicious + boolicious + bowserlicious;
+    grandTotal = goombaTotal + booTotal + bowserTotal;
+
+    alert(grandTotal)
 
 })
