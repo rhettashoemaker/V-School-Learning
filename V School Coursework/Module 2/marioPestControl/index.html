@@ -6,9 +6,50 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Teko:wght@300&display=swap" rel="stylesheet">
+
     </head>
     <body>
-        
+        <img src="real-mario-title.png" id="title">
+
+        <div id="text-container">
+            <form name="marioForm" id="marioForm">
+
+                <h2 class="names">Goombas:</h2>
+                <input type="number" name="goombasCaught">
+                <h2 class="totals">x 5 coins = </h2>
+                <h2 class="totals" id=goombaTotal></h2> 
+
+                <h2 class="names">Boos:</h2>
+                <input type="number" name="bobsCaught">
+                <h2 class="totals">x 10 coins = </h2>
+                <h2 class="totals" id=goombaTotal></h2> 
+
+                <h2 class="names">Bowsers:</h2>
+                <input type="number" name="boosCaught">
+                <h2 class="totals">x 100 coins = </h2>
+                <h2 class="totals" id=goombaTotal></h2> 
+
+                <br><button type="submit">Submit-a for-a the total</button>
+            </form>
+            <h1 id="total">Total cost = </h1>
+            <h1 id="totalSum">0</h1>
+        </div>
+
+        <img id="marioImg" src="https://www.pinclipart.com/picdir/big/77-772179_mario-mario-super-mario-world-clipart.png"> 
+        <div id="pictures">
+            <img class="baddie" id="goombaImg" src="https://www.pinclipart.com/picdir/big/326-3268442_super-mario-bros-goomba-8-bit-clipart.png">
+            <img class="baddie" id="booImg" src="https://www.pinclipart.com/picdir/big/190-1909905_boo-ghost-clipart.png">
+            <img class="baddie" id="bowserImg" src="bowser.png">
+        </div>
+
+        <footer>
+            <h5>EMAIL: mario.the.plumber@mariopestcontrol.io
+            <br>WEBSITE: its-a-time-to-control-pests.com
+            <br>ADDRESS: Pipe 1, Mushroom Kingdom</h5>
+        </footer>
         <script src="app.js" async defer></script>
     </body>
-</html>>
+</html>

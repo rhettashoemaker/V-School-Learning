@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/036f7896-779c-4a8d-8722-a35e99612b52/dcrz5nh-97af31cf-38e5-43fa-9e87-0ed13641c175.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzAzNmY3ODk2LTc3OWMtNGE4ZC04NzIyLWEzNWU5OTYxMmI1MlwvZGNyejVuaC05N2FmMzFjZi0zOGU1LTQzZmEtOWU4Ny0wZWQxMzY0MWMxNzUucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.JyYwaDHBJrwUDreOXHS8TJLxbmcea_5kpivlIMkyDRk);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    z-index: -10000000000000;
+}
+
+#title {
+    width: 100%;
+    margin-top: 24px;
+}
+
+#text-container {
+    text-align: center;
+    background-color: white;
+    width: 400px;
+    margin: 24px auto 0 auto;
+    opacity: .8;
+    border-radius: 20px;
+    padding: 20px 0px 20px 0px;
+}
+
+#marioForm {
+    padding: 16px;
+}
+.names {
+    font-size: 24px;
+    color: orange;
+    font-family: 'Press Start 2P', cursive;
+    padding-top: 10px;
+    
+}
+
+input {
+    height: 30px;
+    width: 40px;
+    font-family: 'Teko', sans-serif;
+    font-size: 24px;
+    text-align: center;
+    padding: 2px;
+}
+
+.totals {
+    display: inline-block;
+    font-family: 'Teko', sans-serif;
+}
+
+#total, #totalSum {
+    font-size: 24px;
+    text-align: center;
+    color: red;
+    font-family: 'Press Start 2P', cursive;
+    padding: 4px;
+}
+
+button {
+    height: 32px;
+    width: 200px;
+    margin: 16px;
+    background-color: red;
+    color: white;
+    font-size: 24px;
+    font-family: 'Teko', sans-serif;
+}
+
+.baddie, #marioImg {
+    position: absolute;
+    bottom: 11%
+}
+
+#marioImg {
+    height: 96px;
+    left: 10%;
+}
+
+#goombaImg {
+    height: 48px;
+    left: 45%
+} 
+
+#booImg {
+    height: 88px;
+    left: 60%;
+    bottom: 15%
+}
+
+#bowserImg {
+    height: 200px;
+    left: 75%;
+    bottom: 10%; 
+}
+
+h5 {
+    position: absolute;
+    background-color: #734116;
+    color: white;
+    font-weight: 200;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 4px;
+}
