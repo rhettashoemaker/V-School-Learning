@@ -1,0 +1,75 @@
+<!DOCTYPE <!DOCTYPE html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>AXIOS to-do</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div id="header">
+            <div id=flexbox>
+                <h1>To-do list for:</h1>
+                <form id="date" name="date"></form>
+                    <input type="date" name="dateSelect" id="dateSelect">
+            </div>
+        </div>
+
+        <form id="todoListForm">
+            <h3>Add Item:</h3>
+            <br><h4>Task:</h4>
+            <input type="text" name="taskName" placeholder="10 characters max" id="taskName" maxlength=10>
+
+            <br><br><h4>Life category:</h4>
+            <input type="radio" name="lifeCategory" value="school" id="schoolSelect"> School
+            <br><input type="radio" name="lifeCategory" value="work" id="workSelect"> Work
+            <br><input type="radio" name="lifeCategory" value="other" id="otherSelect"> Other
+
+            <br><br><h4>Urgency and importance:</h4>
+            <input type="radio" name="urgent/important" value="urgent and important" id="urgentImportant"> Urgent and Important
+            <br><input type="radio" name="urgent/important" value="urgent but unimportant" id="urgent but unimportant"> Urgent but Unimportant
+            <br><input type="radio" name="urgent/important" value="unurgent but important" id="unurgent but important"> Unurgent but Important
+            <br><input type="radio" name="urgent/important" value="unurgent and unimportant" id="unurgent and unimportant"> Unurgent and Unimportant
+
+            <br><br><h4>Description:</h4>
+            <input type="text" name="description" placeholder="50 characters max" id="description" maxlength=50>
+
+            <br><br><button type="submit" name="submit" id="submit" value="submit">Add Task</button>
+        </form>
+
+        <div id="schoolContainer">
+            <h2>School</h2>
+            <div class="section" id="school">
+                <ol class= "itemTable" id= "urgentImportantSchool">Urgent and Important</ol> 
+                <ol class= "itemTable" id= "urgentUnimportanSchool">Urgent but Unimportant</ol>
+                <ol class= "itemTable" id= "unurgentImportantSchool">Unurgent but Unimportant</ol> 
+                <ol class= "itemTable" id= "unurgentUnmportantSchool">Unurgent and Unimportant</ol> 
+            </div>
+        </div>
+
+        <div id="workContainer">
+            <h2>Work</h2>
+            <div class="section" id="work">
+                <ol class= "itemTable" id= "urgentImportantWork">Urgent and Important</ol> 
+                <ol class= "itemTable" id= "urgentUnimportanWork">Urgent but Unimportant</ol> 
+                <ol class= "itemTable" id= "unurgentImportantWork">Unurgent but Unimportant</ol> 
+                <ol class= "itemTable" id= "unurgentUnmportantWork">Unurgent and Unimportant</ol> 
+            </div>
+        </div>
+
+        <div id="otherContainer">
+            <h2>Other</h2>
+            <div class="section" id="other">
+                <ol class= "itemTable" id= "urgentImportantOther">Urgent and Important</ol> 
+                <ol class= "itemTable" id= "urgentUnimportanOther">Urgent but Unimportant</ol> 
+                <ol class= "itemTable" id= "unurgentImportantOther">Unurgent but Unimportant</ol>
+                <ol class= "itemTable" id= "unurgentUnmportantOther">Unurgent and Unimportant</ol> 
+            </div>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>
