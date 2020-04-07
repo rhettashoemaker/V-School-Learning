@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>AXIOS to-do</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="styles-basic.css">
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     </head>
 
@@ -13,8 +13,7 @@
         <div id="header">
             <div id=flexbox>
                 <h1>To-do list for:</h1>
-                <form id="date" name="date"></form>
-                    <input type="date" name="dateSelect" id="dateSelect">
+                <input type="date" name="dateSelect" id="dateSelect">
             </div>
         </div>
 
@@ -22,25 +21,17 @@
             <h3>Add Item:</h3>
             <br><h4>Task:</h4>
             <input type="text" name="taskName" placeholder="25 characters max" id="taskName" maxlength=25>
-
-            <br><br><h4>Life category:</h4>
-            <input type="radio" name="lifeCategory" value="school" id="schoolSelect"> School
-            <br><input type="radio" name="lifeCategory" value="work" id="workSelect"> Work
-            <br><input type="radio" name="lifeCategory" value="other" id="otherSelect"> Other
-
-            <br><br><h4>Urgency and importance:</h4>
-            <input type="radio" name="urgent/important" value="urgent and important" id="urgentImportant"> Urgent and Important
-            <br><input type="radio" name="urgent/important" value="urgent but unimportant" id="urgent but unimportant"> Urgent but Unimportant
-            <br><input type="radio" name="urgent/important" value="unurgent but important" id="unurgent but important"> Unurgent but Important
-            <br><input type="radio" name="urgent/important" value="unurgent and unimportant" id="unurgent and unimportant"> Unurgent and Unimportant
-
+            <br><h4>Image:</h4>
+            <input type="image" name="image" placeholder="insert image here" id="image">
             <br><br><h4>Description:</h4>
             <input type="text" name="description" placeholder="50 characters max" id="description" maxlength=50>
 
-            <br><br><button type="submit" name="submit" id="submit" value="submit">Add Task</button>
+            <br><button type="submit" name="submit" id="submit" value="submit">Add Task</button>
         </form>
 
-        <h2 id="todoList">To-dos:</h2>
+        <div id="todoListContainer">
+            <h2 id="todoList">To-dos:</h2>
+        </div>
 
         <script src="app.js"></script>
     </body>

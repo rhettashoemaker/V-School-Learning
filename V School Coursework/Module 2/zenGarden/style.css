@@ -13,7 +13,7 @@ body {
 }
 
 ul {
-	list-style-type: none;
+	list-style: none;
 }
 
 a {
@@ -23,13 +23,17 @@ a {
 a:hover {
     color: #0599C2;
 	text-decoration: underline;
-	font-family: 'Julius Sans One', sans-serif;
-	text-transform: uppercase;
 	z-index: 2;
 	transition: all 0.25s ease-out;
 }
 a:visited {
     color: #1A5952;
+}
+
+#speshal {
+	color: #809b7e;
+	font-family: 'Julius Sans One', sans-serif;
+	text-transform: uppercase;
 }
 
 #grid-container {
@@ -56,20 +60,25 @@ header{
 #design-archives {
 	position: absolute;
 	display: flex;
-    top: 160px;
-    right: 0;
+	top: 160px;
     width: 100%;
     height: 70px;
     background: rgba(255,255,255,0.2);
 }
 
-#nav-flexbox {
-    position: absolute;
-	justify-content: center;
-	align-items: center;
-	list-style: none;
+#view-all-designs {
+	margin: 0;
+	padding: 0;
 	color: white;
-	z-index: 2;
+	list-style: none;
+	width: 80%;
+	height: 100px;
+	font-family: 'Julius Sans One', sans-serif;
+	font-size: 16px;
+	opacity: .7;
+	text-align: center;
+	margin-left: 11%;
+	margin-top: 16px;
 }
 
 h1, h2 {
@@ -77,19 +86,17 @@ h1, h2 {
 }
 
 h1 {
-    padding-bottom: 5px;
     font-family: 'Julius Sans One', sans-serif;
-    font-size: 32px;
+    font-size: 40px;
     text-transform: uppercase;
 }
 
 h2 {
     display: block;
-    padding-top: 5px;
     padding-bottom: 30px;
     border-top: none;
     color: rgba(255,255,255,0.6);
-    font-size: 1.6em;
+    font-size: 16px;
     font-style: italic;
 }
 
@@ -106,6 +113,7 @@ h3 {
     text-transform: uppercase;
 }
 
+
 #participation, #benefits {
     background-attachment: scroll, scroll, fixed;
     background-color: rgba(138,188,159,.5);
@@ -116,6 +124,19 @@ h3 {
 
 #resources {
 	background-color: rgba(138,188,159,.5);
+}
+
+.download {
+	display: inline-block;
+	position: absolute;
+	padding: 2px;
+	color: #a9b995;
+	background: #d9e1cd;
+	border-radius: 2px;
+	font-size: 16px;
+	text-indent: 0;
+	font-family: 'verdemoderna';
+	transition: all 0.25s ease-out;
 }
 
 #designs, #resources {
@@ -142,9 +163,20 @@ h3 {
 }
 
 #designs .designer-name {
-    color: #616857;
+    color: #607476;
     font-size: 12px;
     font-style: normal;
+}
+
+.design-name:hover, .designer-name:hover {
+	color: #0d8ba1;
+	transition: all 0.25s ease-out;
+	text-decoration: none;
+
+}
+.designer-name {
+	font-family: 'Libre Baskerville', sans-serif;
+	text-transform: none;
 }
 
 #participation {
@@ -187,14 +219,17 @@ h3 {
 
 footer {
     clear: both;
-    padding: 3em 10%;
-    color: #fff;
+    padding: 16px 0px 48px 0px;
+    color: white;
     background: #134347;
-    text-align: center;
+	display: flex;
+	justify-content:center;
+	align-items: space-evenly;
+	font-family: 'verdemoderna';
+	font-size: 36px;
 }
 footer a {
     display: inline-block;
-    overflow: hidden;
     width: 40px;
     height: 40px;
     position: relative;
@@ -208,16 +243,18 @@ footer a:hover {
 footer a:visited {
     color: rgba(255, 255, 255, 0.2);
 }
-footer a::before {
-    display: block;
-    position: absolute;
-    left: 0;
-    font-size: 36px;
-    font-family: 'verdemoderna';
-}
+
 
 @media only screen and (min-width: 1000px) {
 	#grid-container {
 		grid-template-columns: 2fr 1fr;
 	}
+	#intro {
+		grid-column: 1/2;
+	}
+	#sidebar {
+		grid-column: 2/3;
+		grid-row: 2/3
+	}
 }
+

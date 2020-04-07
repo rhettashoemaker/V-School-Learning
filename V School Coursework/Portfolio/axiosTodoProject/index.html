@@ -1,0 +1,45 @@
+<!DOCTYPE <!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Todo List</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Sen&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <form id="todoListForm">
+            <h1 id="title">To-do list for:</h1>
+            
+            <input type="date" name="dateSelect" id="dateSelect">
+
+            <br><h3>Add Item:</h3>
+
+            <br><h4>Task:</h4>
+            <input type="text" name="taskName" placeholder="25 characters max" id="taskName" maxlength=25>
+            
+            <br><h4>Price ($):</h4>
+            <input type="number" name="taskPrice" id="taskPrice" step=".01">
+            
+            <br><h4>Description:</h4>
+            <input type="text" name="description" placeholder="50 characters max" id="description" maxlength=50>
+            
+            <br><h4>Image URL:</h4>
+            <input type="text" name="image" id="image">
+            
+            <br><button type="submit" name="submit" id="submit" value="submit">Add Task</button>
+        </form>
+
+        <div id="todoListContainer">
+            <h1 id="todoList">To-dos:</h1>
+            <ol id="todoItemsContainer">
+
+            </ol>
+        </div>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js"></script>
+        <script src="app.js" async defer></script>
+    </body>
+</html>
