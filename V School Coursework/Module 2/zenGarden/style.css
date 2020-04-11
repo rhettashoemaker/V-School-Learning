@@ -122,8 +122,14 @@ h3 {
 	background-size: auto, auto, cover;
 }
 
+.icon {
+	font-family: 'verdemoderna';
+}
+
 #resources {
 	background-color: rgba(138,188,159,.5);
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 }
 
 .download {
@@ -251,10 +257,23 @@ footer a:visited {
 	}
 	#intro {
 		grid-column: 1/2;
+		grid-row: 1/2
 	}
 	#sidebar {
 		grid-column: 2/3;
 		grid-row: 2/3
+	}
+	#green {
+		grid-column: 1/2;
+		grid-row: 2/3;
+	}
+	#resources {
+		grid-column: 2/3;
+		grid-row: 3/4;
+	}
+	#requirements {
+		grid-column: 1/2;
+		grid-row: 4/5;
 	}
 }
 

@@ -16,7 +16,7 @@ function listData (data){
         const itemPrice = document.createElement('h6'); 
         const itemDescription = document.createElement('p');
         const itemImageURL = document.createElement('p');
-        const itemEditButton = document.createElement('button');
+        //const itemEditButton = document.createElement('button');
         const itemDeleteButton = document.createElement('button');
         const itemCompleteButton = document.createElement('button');
 
@@ -24,17 +24,16 @@ function listData (data){
         itemPrice.textContent = data[i].price
         itemDescription.textContent = data[i].description
         itemImageURL.textContent = data[i].imgURL
-        itemEditButton.textContent = "Edit"
+        //itemEditButton.textContent = "Edit"
         itemDeleteButton.textContent = "Delete"
         itemCompleteButton.textContent = "Complete" 
 
-        itemEditButton.setAttribute('class', 'editButton')
+        //itemEditButton.setAttribute('class', 'editButton')
         itemDeleteButton.setAttribute('class', 'deleteButton')
         itemCompleteButton.setAttribute('class', 'completeButton')
         
         // itemEditButton.addEventListener('click', function () {
         //     const updates {
-
         //     }
         //     axios.put("https://api.vschool.io/rhettashoemaker/todo/" + todo._id, updates)
         // })
@@ -64,7 +63,7 @@ function listData (data){
         itemContainer.appendChild(itemPrice);
         itemContainer.appendChild(itemDescription);
         itemContainer.appendChild(itemImageURL);
-        itemContainer.appendChild(itemEditButton);
+        //itemContainer.appendChild(itemEditButton);
         itemContainer.appendChild(itemDeleteButton);
         itemContainer.appendChild(itemCompleteButton);
     }
@@ -75,7 +74,7 @@ function getData() {
         .then(res => listData(res.data))
         .catch(err => console.log(err))
 }
-
+getData()
 
 form.addEventListener("submit", function(event){
     event.preventDefault()
