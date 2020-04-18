@@ -35,13 +35,12 @@ function clearOut(array) {
 
 //Silver-----------------------------------------------------
 document.getElementById("redBlackTheme").addEventListener('click', function () {
-    const leftTexts = document.getElementsByClassName("message left");
+    const leftTexts = document.getElementsByClassName("left");
     leftTexts.style.backgroundColor = "#FF0000";
 
-    const rightTexts = document.getElementsByClassName("message right");
+    const rightTexts = document.getElementsByClassName("right");
     rightTexts.style.backgroundColor = "#000000";
     rightTexts.style.color = "#ffffff"
 })
-
 
 //Gold-------------------------------------------------------
